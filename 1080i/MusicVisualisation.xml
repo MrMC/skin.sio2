@@ -137,16 +137,23 @@
               <textcolor>Grey3</textcolor>
             </control>
             <control type="label" description="Album">
-              <top>636</top>
+              <top>625</top>
               <width>900</width>
               <label>$INFO[MusicPlayer.Album]</label>
               <align>left</align>
               <font>size38</font>
               <textcolor>Grey3</textcolor>
             </control>
+            <control type="label" description="infos">
+              <top>662</top>
+              <width>900</width>
+              <label>$INFO[MusicPlayer.Codec]$INFO[MusicPlayer.BitRate, • , kbit/s]$INFO[MusicPlayer.BitsPerSample, • , bps]$INFO[MusicPlayer.SampleRate, • , Mhz]</label>
+              <align>left</align>
+              <textcolor>Grey3</textcolor>
+            </control>
             <control type="label" description="Track position">
               <left>0</left>
-              <top>690</top>
+              <top>694</top>
               <width>900</width>
               <align>left</align>
               <textcolor>Grey</textcolor>
@@ -283,16 +290,24 @@
             </control>
             <control type="label" description="Album">
               <right>0</right>
-              <top>636</top>
+              <top>625</top>
               <width>900</width>
               <label>$INFO[MusicPlayer.Album]</label>
               <align>right</align>
               <font>size38</font>
               <textcolor>Grey3</textcolor>
             </control>
+            <control type="label" description="infos">
+              <right>0</right>
+              <top>662</top>
+              <width>900</width>
+              <label>$INFO[MusicPlayer.Codec]$INFO[MusicPlayer.BitRate, • , kbit/s]$INFO[MusicPlayer.BitsPerSample, • , bps]$INFO[MusicPlayer.SampleRate, • , Mhz]</label>
+              <align>right</align>
+              <textcolor>Grey3</textcolor>
+            </control>
             <control type="label" description="Track position">
               <right>0</right>
-              <top>690</top>
+              <top>694</top>
               <width>900</width>
               <align>right</align>
               <textcolor>Grey</textcolor>
