@@ -80,7 +80,7 @@
               <width>700</width>
               <fadetime>300</fadetime>
               <aspectratio aligny="bottom">stretch</aspectratio>
-              <texture flipy="true">images/record.png</texture>
+              <texture fallback="images/record.png" background="true">$INFO[Player.Folderpath]/cdart.png</texture>
             </control>
             <control type="image" description="MusicAlbum">
               <left>0</left>
@@ -233,7 +233,7 @@
               <width>700</width>
               <fadetime>300</fadetime>
               <aspectratio aligny="bottom">stretch</aspectratio>
-              <texture>images/record.png</texture>
+              <texture fallback="images/record.png" background="true">$INFO[Player.Folderpath]/cdart.png</texture>
             </control>
             <control type="image" description="MusicAlbum">
               <left>0</left>
