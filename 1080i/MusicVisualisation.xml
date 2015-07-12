@@ -147,7 +147,7 @@
             <control type="label" description="infos">
               <top>662</top>
               <width>900</width>
-              <label>$INFO[MusicPlayer.Codec]$INFO[MusicPlayer.BitRate, • , kbit/s]$INFO[MusicPlayer.BitsPerSample, • , bps]$INFO[MusicPlayer.SampleRate, • , Mhz]</label>
+              <label>[UPPERCASE]$INFO[musicplayer.Codec][/UPPERCASE] $INFO[musicplayer.Bitrate, @ ,kbps]$INFO[musicplayer.bitspersample, · ,bit]$INFO[musicplayer.Samplerate, · ,kHz]$INFO[musicplayer.Channels, · , $LOCALIZE[21444]]</label>
               <align>left</align>
               <textcolor>Grey3</textcolor>
             </control>
@@ -301,7 +301,7 @@
               <right>0</right>
               <top>662</top>
               <width>900</width>
-              <label>$INFO[MusicPlayer.Codec]$INFO[MusicPlayer.BitRate, • , kbit/s]$INFO[MusicPlayer.BitsPerSample, • , bps]$INFO[MusicPlayer.SampleRate, • , Mhz]</label>
+              <label>[UPPERCASE]$INFO[musicplayer.Codec][/UPPERCASE] $INFO[musicplayer.Bitrate, @ ,kbps]$INFO[musicplayer.bitspersample, · ,bit]$INFO[musicplayer.Samplerate, · ,kHz]$INFO[musicplayer.Channels, · , $LOCALIZE[21444]]</label>
               <align>right</align>
               <textcolor>Grey3</textcolor>
             </control>
@@ -399,6 +399,13 @@
         <font>size26</font>
         <label>$INFO[Visualisation.Preset,, @ ]$INFO[Visualisation.Name]</label>
       </control>
+    </control>
+    <control type="label">
+      <visible>Player.Paused</visible>
+      <right>50</right>
+      <top>50</top>
+      <label>PAUSED</label>
+      <width>200</width>
     </control>
   </controls>
 </window>
