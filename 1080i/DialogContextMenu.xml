@@ -10,6 +10,7 @@
   <controls>
     <control type="image" id="999" description="Background image">
       <centerleft>960</centerleft>
+      <centertop>540</centertop>
       <height>1080</height>
       <width>750</width>
       <texture border="50">images/ContextMenu.png</texture>

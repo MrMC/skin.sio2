@@ -85,10 +85,10 @@
             <label>24001</label>
             <onclick>activatewindow(AddonBrowser,root)</onclick>
           </item>
-          <item id="8" description="Weather">
+<!--           <item id="8" description="Weather">
             <label>8</label>
             <onclick>activatewindow(WeatherSettings)</onclick>
-          </item>
+          </item> -->
           <item id="9" description="Services">
             <label>14036</label>
             <onclick>Activatewindow(servicesettings)</onclick>
@@ -124,9 +124,9 @@
         <animation effect="fade" time="100">VisibleChange</animation>
         <top>148</top>
         <width>384</width>
-        <height>192</height>
+        <height>114</height>
         <aspectratio align="center" aligny="bottom">keep</aspectratio>
-        <texture background="true">images/XBMCLogo.png</texture>
+        <texture background="true">images/mrmc_logo.png</texture>
       </control>
       <control type="image" description="Logo">
         <visible>Container(52).HasFocus(1)</visible>
@@ -207,7 +207,7 @@
         <align>center</align>
         <label>31037</label>
       </control>
-      <control type="label" description="Weather">
+<!--       <control type="label" description="Weather">
         <visible>Container(52).HasFocus(8)</visible>
         <width>660</width>
         <height>625</height>
@@ -217,7 +217,7 @@
         <aligny>top</aligny>
         <align>center</align>
         <label>$LOCALIZE[5].</label>
-      </control>
+      </control> -->
       <control type="label" description="Services">
         <visible>Container(52).HasFocus(9)</visible>
         <width>660</width>

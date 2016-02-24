@@ -191,7 +191,7 @@
         <label2>$INFO[Skin.String(ShelfAddons.15.Label)]</label2>
         <onclick>Skin.SetAddon(ShelfAddons.15.Label,xbmc.python.script)</onclick>
       </control>
-      <control type="button" id="519" description="FAVOURITES">
+<!--       <control type="button" id="519" description="FAVOURITES">
         <visible>!Skin.HasSetting(AddonsSectionHide)</visible>
         <visible>Skin.HasSetting(AddonsShelf_Custom)</visible>
         <include>SettingsSubmenuButtons</include>
@@ -208,8 +208,8 @@
         <label2>$INFO[Skin.String(ShelfAddons.17.Label)]</label2>
         <thumb>$INFO[Skin.String(ShelfAddons.17.Icon)]</thumb>
         <onclick>RunScript(script.favourites,property=ShelfAddons.17)</onclick>
-      </control>
-      <control type="button" id="521" description="FAVOURITES">
+      </control> -->
+<!--       <control type="button" id="521" description="FAVOURITES">
         <visible>!Skin.HasSetting(AddonsSectionHide)</visible>
         <visible>Skin.HasSetting(AddonsShelf_Custom)</visible>
         <include>SettingsSubmenuButtons</include>
@@ -235,7 +235,7 @@
         <label2>$INFO[Skin.String(ShelfAddons.20.Label)]</label2>
         <thumb>$INFO[Skin.String(ShelfAddons.20.Icon)]</thumb>
         <onclick>RunScript(script.favourites,property=ShelfAddons.20)</onclick>
-      </control>
+      </control> -->
     </control>
   </controls>
 </window>

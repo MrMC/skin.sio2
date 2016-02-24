@@ -165,7 +165,7 @@
         <control type="group">
             <visible>Library.HasContent(TVShows)</visible>
             <control type="panel" id="312" description="TOP Shortcuts">
-                <visible>[Library.HasContent(TVShows) | !Skin.HasSetting(TVShelf_Watchlist)] + [Container(9000).HasFocus(341) | Control.HasFocus(312)]</visible>
+                <visible>[Library.HasContent(TVShows)] + [Container(9000).HasFocus(341) | Control.HasFocus(312)]</visible>
                 <onup>9009</onup>
                 <ondown>9000</ondown>
                 <onleft>312</onleft>

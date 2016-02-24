@@ -232,24 +232,12 @@
                             <thumb>$INFO[Skin.String(HomeFav.1.Icon)]</thumb>
                             <onclick>SetFocus(9000)</onclick>
                         </item>
-                        <item id="601" description="HomeFav">
-                            <visible>IsEmpty(Skin.String(HomeFav.1.Label))</visible>
-                            <thumb>DefaultAddon.png</thumb>
-                            <label>+ $LOCALIZE[1036]</label>
-                            <onclick>RunScript(script.favourites,property=HomeFav.1)</onclick>
-                        </item>
                         <item id="602" description="HomeFav">
                             <visible>!IsEmpty(Skin.String(HomeFav.2.Label))</visible>
                             <label>$INFO[Skin.String(HomeFav.2.Label)]</label>
                             <label2>+ $LOCALIZE[1036]</label2>
                             <thumb>$INFO[Skin.String(HomeFav.2.Icon)]</thumb>
                             <onclick>SetFocus(9000)</onclick>
-                        </item>
-                        <item id="602" description="HomeFav">
-                            <visible>IsEmpty(Skin.String(HomeFav.2.Label))</visible>
-                            <thumb>DefaultAddon.png</thumb>
-                            <label>+ $LOCALIZE[1036]</label>
-                            <onclick>RunScript(script.favourites,property=HomeFav.2)</onclick>
                         </item>
                         <item id="603" description="HomeFav">
                             <visible>!IsEmpty(Skin.String(HomeFav.3.Label))</visible>
@@ -258,24 +246,12 @@
                             <thumb>$INFO[Skin.String(HomeFav.3.Icon)]</thumb>
                             <onclick>SetFocus(9000)</onclick>
                         </item>
-                        <item id="603" description="HomeFav">
-                            <visible>IsEmpty(Skin.String(HomeFav.3.Label))</visible>
-                            <thumb>DefaultAddon.png</thumb>
-                            <label>+ $LOCALIZE[1036]</label>
-                            <onclick>RunScript(script.favourites,property=HomeFav.3)</onclick>
-                        </item>
                         <item id="604" description="HomeFav">
                             <visible>!IsEmpty(Skin.String(HomeFav.4.Label))</visible>
                             <label>$INFO[Skin.String(HomeFav.4.Label)]</label>
                             <label2>+ $LOCALIZE[1036]</label2>
                             <thumb>$INFO[Skin.String(HomeFav.4.Icon)]</thumb>
                             <onclick>SetFocus(9000)</onclick>
-                        </item>
-                        <item id="604" description="HomeFav">
-                            <visible>IsEmpty(Skin.String(HomeFav.4.Label))</visible>
-                            <thumb>DefaultAddon.png</thumb>
-                            <label>+ $LOCALIZE[1036]</label>
-                            <onclick>RunScript(script.favourites,property=HomeFav.4)</onclick>
                         </item>
                         <item id="605" description="HomeFav">
                             <visible>!IsEmpty(Skin.String(HomeFav.5.Label))</visible>
@@ -284,24 +260,12 @@
                             <thumb>$INFO[Skin.String(HomeFav.5.Icon)]</thumb>
                             <onclick>SetFocus(9000)</onclick>
                         </item>
-                        <item id="605" description="HomeFav">
-                            <visible>IsEmpty(Skin.String(HomeFav.5.Label))</visible>
-                            <thumb>DefaultAddon.png</thumb>
-                            <label>+ $LOCALIZE[1036]</label>
-                            <onclick>RunScript(script.favourites,property=HomeFav.5)</onclick>
-                        </item>
                         <item id="606" description="HomeFav">
                             <visible>!IsEmpty(Skin.String(HomeFav.6.Label))</visible>
                             <label>$INFO[Skin.String(HomeFav.6.Label)]</label>
                             <label2>+ $LOCALIZE[1036]</label2>
                             <thumb>$INFO[Skin.String(HomeFav.6.Icon)]</thumb>
                             <onclick>SetFocus(9000)</onclick>
-                        </item>
-                        <item id="606" description="HomeFav">
-                            <visible>IsEmpty(Skin.String(HomeFav.6.Label))</visible>
-                            <thumb>DefaultAddon.png</thumb>
-                            <label>+ $LOCALIZE[1036]</label>
-                            <onclick>RunScript(script.favourites,property=HomeFav.6)</onclick>
                         </item>
                         <item id="401" description="AddonCustom">
                             <visible>!IsEmpty(Skin.String(HomeAddon.1.Label))</visible>
@@ -560,7 +524,7 @@
             <onright>50</onright>
             <visible>Library.HasContent(TVShows)</visible>
             <visible>Container(50).HasFocus(1002)</visible>
-            <control type="radiobutton" id="200" description="TV WL">
+<!--             <control type="radiobutton" id="200" description="TV WL">
                 <include>SettingsSubmenuButtons</include>
                 <label>$LOCALIZE[31048] $LOCALIZE[20364]</label>
                 <selected>!Skin.HasSetting(TVShelf_Watchlist)</selected>
@@ -573,7 +537,7 @@
                 <selected>Skin.HasSetting(TVShelf_Watchlist)</selected>
                 <enable>!Skin.HasSetting(hidetv)</enable>
                 <onclick>Skin.ToggleSetting(TVShelf_Watchlist)</onclick>
-            </control>
+            </control> -->
         </control>
         <control type="group" id="520">
             <visible>Container(50).HasFocus(1003)</visible>
@@ -644,36 +608,6 @@
                     <label2>24000</label2>
                     <thumb>$INFO[system.addonicon(Skin.String(ShelfMusic.5.Label))]</thumb>
                     <onclick>Skin.SetAddon(ShelfMusic.5.Label,xbmc.python.pluginsource)</onclick>
-                </item>
-                <item id="6" description="fav">
-                    <label>$INFO[Skin.String(ShelfMusic.6.Label)]</label>
-                    <label2>31029</label2>
-                    <thumb>$INFO[Skin.String(ShelfMusic.6.Icon)]</thumb>
-                    <onclick>RunScript(script.favourites,property=ShelfMusic.6)</onclick>
-                </item>
-                <item id="7" description="fav">
-                    <label>$INFO[Skin.String(ShelfPictures.7.Label)]</label>
-                    <label2>31029</label2>
-                    <thumb>$INFO[Skin.String(ShelfMusic.7.Icon)]</thumb>
-                    <onclick>RunScript(script.favourites,property=ShelfMusic.7)</onclick>
-                </item>
-                <item id="8" description="fav">
-                    <label>$INFO[Skin.String(ShelfPictures.8.Label)]</label>
-                    <label2>31029</label2>
-                    <thumb>$INFO[Skin.String(ShelfMusic.8.Icon)]</thumb>
-                    <onclick>RunScript(script.favourites,property=ShelfMusic.8)</onclick>
-                </item>
-                <item id="9" description="fav">
-                    <label>$INFO[Skin.String(ShelfPictures.9.Label)]</label>
-                    <label2>31029</label2>
-                    <thumb>$INFO[Skin.String(ShelfMusic.9.Icon)]</thumb>
-                    <onclick>RunScript(script.favourites,property=ShelfMusic.9)</onclick>
-                </item>
-                <item id="10" description="fav">
-                    <label>$INFO[Skin.String(ShelfPictures.10.Label)]</label>
-                    <label2>31029</label2>
-                    <thumb>$INFO[Skin.String(ShelfMusic.10.Icon)]</thumb>
-                    <onclick>RunScript(script.favourites,property=ShelfMusic.10)</onclick>
                 </item>
             </content>
         </control>

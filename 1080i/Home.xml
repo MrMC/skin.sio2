@@ -3,7 +3,6 @@
     <backgroundcolor>aliceblue</backgroundcolor>
     <defaultcontrol always="true">9000</defaultcontrol>
     <allowoverlay>no</allowoverlay>
-    <onload>RunScript(script.favourites)</onload>
     <onload>SetProperty(SkinWidgets_RandomItems_Update,true)</onload>
     <include>OpenClose</include>
     <controls>
@@ -35,7 +34,7 @@
             <onclick  condition="Control.IsVisible(311) + StringCompare(Skin.String(moviesshelf),WL)">Skin.SetString(moviesshelf,RND)</onclick>
             <onclick  condition="Control.IsVisible(311) + StringCompare(Skin.String(moviesshelf),RND)">Skin.SetString(moviesshelf,)</onclick>
             <!--TVSHOWS-->
-            <onclick  condition="Control.IsVisible(312)">Skin.ToggleSetting(TVShelf_Watchlist)</onclick>
+            <!-- <onclick  condition="Control.IsVisible(312)">Skin.ToggleSetting(TVShelf_Watchlist)</onclick> -->
             <onup>noop</onup>
             <ondown condition="Control.IsVisible(311)">311</ondown>
             <ondown condition="Control.IsVisible(312)">312</ondown>
@@ -189,13 +188,13 @@
                     <thumb>icons/photos.png</thumb>
                     <onclick>ActivateWindow(2)</onclick>
                 </item>
-                <item id="345">
+<!--                 <item id="345">
                     <visible>!Skin.HasSetting(hidewtr)</visible>
                     <property name="weatherthumb">$INFO[Weather.Conditions]</property>
                     <label>$INFO[Weather.Temperature]</label>
                     <property name="color">images/white.png</property>
                     <onclick>ActivateWindow(MyWeather)</onclick>
-                </item>
+                </item> -->
                 <item id="352">
                     <visible>!Skin.HasSetting(hidefav)</visible>
                     <thumb>icons/favs.png</thumb>
@@ -414,16 +413,16 @@
                     <!--<onclick condition="StringCompare(Skin.String(shutdown),suspend)">XBMC.suspend()</onclick>-->
                     <!--<onclick condition="StringCompare(Skin.String(shutdown),reboot)">XBMC.reboot()</onclick>-->
                 <!--</item>-->
-                <item id="349">
-                    <!--<visible>!Player.HasMedia + !Skin.HasSetting(quitter)</visible>-->
+<!--                 <item id="349">
+                    <visible>!Player.HasMedia + !Skin.HasSetting(quitter)</visible>
                     <thumb>icons/quits.png</thumb>
                     <label>351</label>
                     <property name="color">icons/darkblue.png</property>
                     <onclick>ActivateWindow(ShutdownMenu)</onclick>
-                </item>
+                </item> -->
             </content>
         </control>
-        <include>weather_shelf</include>
+        <!-- <include>weather_shelf</include> -->
         <control type="group" id="700" description="Shelf items">
             <animation condition="!Container(9000).Row(0) | Container(9000).HasPrevious()" effect="slide" start="0,0" end="0,-500" time="220">Conditonal</animation>
             <include>Movies</include>

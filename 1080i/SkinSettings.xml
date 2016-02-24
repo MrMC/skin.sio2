@@ -79,11 +79,11 @@
           </control>
         </focusedlayout>
         <content>
-          <item id="2" description="Lyrics">
+<!--           <item id="2" description="Lyrics">
             <label>31062</label>
             <label2>$INFO[Skin.String(LyricPath)]</label2>
             <onclick>Skin.SetAddon(LyricPath,xbmc.python.lyrics)</onclick>
-          </item>
+          </item> -->
           <item id="4" description="Scrollbars">
             <visible>Skin.HasSetting(Scrollbars_Active)</visible>
             <label>$LOCALIZE[21383]</label>
@@ -112,11 +112,11 @@
             <label>31052</label>
             <onclick>ActivateWindow(1117)</onclick>
           </item>
-          <item id="9" description="Quit button function">
+<!--           <item id="9" description="Quit button function">
             <label>$LOCALIZE[31049]</label>
             <label2 fallback="33061">$VAR[QuitLabel]</label2>
             <onclick>ActivateWindow(1114)</onclick>
-          </item>
+          </item> -->
           <item id="14" description="Music Default">
             <label>$LOCALIZE[31053]</label>
             <label2>$INFO[Skin.String(MusicLink)]</label2>
